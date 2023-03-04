@@ -1,0 +1,166 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+}
+
+body {
+  font-family: "Poppins";
+  height: 100vh;
+  width: 100vw;
+  background-color: rgb(205, 94, 14);
+
+  display: grid;
+  grid-auto-flow: column;
+  grid-auto-columns: 1fr;
+}
+
+/* LEFT BOX */
+
+.left_box {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  padding: 50px;
+
+  height: 100vh;
+}
+
+.left_box img[alt="logo Ohanote"] {
+  width: clamp(100px, 150px, 40vw);
+}
+
+.left_box h2 {
+  font-size: clamp(3vh, 1.9em, 30%);
+  font-weight: 400;
+  color: white;
+}
+
+.left_box img[alt="decoration element"] {
+  width: auto;
+  width: clamp(25vw, 30vw, 40vw);
+  margin: -50px 0px -30px 0px;
+}
+
+/* RIGHT BOX */
+
+.right_box {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: white;
+  border-radius: 50px 0px 0px 50px;
+  padding: 50px;
+
+  height: 100%;
+}
+
+.right_box .language_menu {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  gap: clamp(2vh, 3vh, 5vh);
+}
+
+.right_box span {
+  font-size: clamp(2vh, 0.5em, 1em);
+}
+
+.right_box img {
+  height: clamp(2vh, 0.5em, 1em);
+  cursor: pointer;
+}
+
+.right_box .signup {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: clamp(2vh, 3vh, 5vh);
+}
+
+.right_box .signup h1 {
+  font-size: clamp(1vw, 1.5em, 5vw);
+}
+
+.right_box .signup .signup_options_box {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  gap: clamp(2vh, 3vh, 5vh);
+}
+
+.right_box .signup .signup_options_box .signup_option {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5%;
+  width: 100%;
+  padding: 1vh;
+  border: 1px solid rgb(155, 155, 155);
+  border-radius: 15px;
+
+  cursor: pointer;
+}
+
+.right_box .signup .or {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0px;
+}
+
+.right_box .signup .or span {
+  margin: 0px 30px;
+}
+
+.right_box .signup .or hr {
+  border: 1px solid black;
+  width: 30px;
+  height: 0px;
+  margin: 0px;
+}
+
+.right_box .signup form {
+  display: flex;
+  flex-direction: column;
+  gap: clamp(2vh, 3vh, 5vh);
+}
+
+.right_box .signup form input {
+  padding: 15px;
+  border-radius: 15px;
+  border-top: 0px;
+  border-left: 0px;
+  border-right: 0px;
+  border-bottom: 2px solid rgb(131, 131, 131);
+}
+
+.right_box .signup form input::placeholder {
+  font-size: clamp(2vh, 0.5em, 1em);
+  color: #c3c3c3;
+}
+
+.right_box .signup form input[type="submit"] {
+  background-color: rgb(205, 94, 14);
+  color: white;
+  font-size: clamp(2vh, 0.5em, 1em);
+  font-weight: 800;
+
+  cursor: pointer;
+}
+
+.right_box .signup .secondary {
+  font-size: clamp(2vh, 0.5em, 1em);
+}
+
+.right_box .signup .secondary a {
+  font-size: clamp(2vh, 0.5em, 1em);
+  text-decoration: none;
+  color: rgb(205, 94, 14);
+}
